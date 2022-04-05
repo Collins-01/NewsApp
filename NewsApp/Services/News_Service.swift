@@ -38,6 +38,7 @@ struct NewsServiceImpl: NewsService {
                     
                 }
                 else{
+                    
                     //handle error
                     return Fail(error: APiError.errorCode(response.statusCode)).eraseToAnyPublisher()
                 }
